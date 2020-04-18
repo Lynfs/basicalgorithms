@@ -13,12 +13,12 @@ void swap(int *x, int *y){
 	*y = fn; 
 }
 
-void bubbleSort(int arr[], int n){ 
+void bubbleSort(int arr[], int fn){ 
 	int fx, fy; 
 	bool swapped; 
-	for(fx = 0; fx < n-1; fx++){ 
+	for(fx = 0; fx < fn-1; fx++){ 
 		swapped = false; 
-		for(fy = 0; fy < n-fx-1; fy++){ 
+		for(fy = 0; fy < fn-fx-1; fy++){ 
 			if (arr[fy] > arr[fy+1]){ 
 				swap(&arr[fy], &arr[fy+1]); 
 				swapped = true; 
